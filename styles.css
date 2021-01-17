@@ -1,4 +1,7 @@
-/* #### Text
+/* 
+## Colors
+### Primary
+#### Text
 - Very dark desaturated blue: hsl(238, 29%, 16%)
 - Soft red: hsl(14, 88%, 65%)
 
@@ -22,7 +25,58 @@ Background gradient:
      box-sizing: border-box;
  }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
  body {
     font-size: 12px;
     font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(274, 43%, 79%); 
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
  }
+
+ .icon {
+
+ }
+
+ .faq{
+   width: 300px;
+   height: 300px;
+   padding: 20px;
+   margin: 50px auto;
+   background-color: white;
+ }
+
+.question:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.question:after {
+  content: "";
+  position: absolute;
+  left: 500px;
+  width: 10px;
+  height: 7px;
+
+  background-image: url(./../../images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 7px;
+}
+
+.question:active:after, .question:visited:after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.close {
+  display: none;
+}
+
+.open  {
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+
+}
