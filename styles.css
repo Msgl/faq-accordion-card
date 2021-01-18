@@ -28,38 +28,87 @@ Background gradient:
 html, body {
   height: 100%;
   margin: 0;
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
  body {
-    font-size: 12px;
-    font-family: 'Kumbh Sans', sans-serif;
     background-color: hsl(274, 43%, 79%); 
     background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
  }
 
+ .container {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  width: 600px;
+  margin: 150px auto;
+  height: 370px;
+ }
+
+
  .icon {
+  width: 40%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 110% 70%;
+  background-size: 260%;
 
  }
+
+#box-icon {
+ position:absolute;
+ width: 40%;
+ z-index: 1;
+ bottom: 31%;
+ left: -28%;
+}
+
+#woman-icon {
+  position:absolute;
+  width: 100%;
+  right: 16%;
+  top: 25%;
+}
 
  .faq{
-   width: 300px;
-   height: 300px;
-   padding: 20px;
-   margin: 50px auto;
+   width: 60%;
+   height: 100%;
+   padding: 50px;
    background-color: white;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
  }
 
+ .faq h1 {
+   padding-bottom: 20px;
+ }
+
+.question {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom : solid 1px hsl(240, 5%, 91%);
+}
+
+.answer {
+  border-bottom : solid 1px hsl(240, 5%, 91%);
+}
 .question:hover {
   color: hsl(14, 88%, 65%);
 }
 
+
 .question:after {
   content: "";
   position: absolute;
-  left: 500px;
+  left: 250px;
   width: 10px;
   height: 7px;
-
   background-image: url(./../../images/icon-arrow-down.svg);
   background-repeat: no-repeat;
   background-size: 10px 7px;

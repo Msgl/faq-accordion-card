@@ -9,3 +9,4 @@ q.forEach((q) => q.addEventListener('click', function () {
     q.style.fontWeight =  '900';
   }
 }));
+
