@@ -1,21 +1,19 @@
 
-// ********************WORKING EXCEPT QUESTION STYLE 
 const q = document.querySelectorAll('.question');
 const a = document.querySelectorAll('.answer');
 
 q.forEach((q) => q.addEventListener('click', function () {
-  if (this.nextElementSibling.className === 'open'){
-        this.nextElementSibling.className = 'close';
-        this.className = 'question';
-      
+  if (q.nextElementSibling.className === 'open'){
+       
+        q.nextElementSibling.className = 'close';
+        q.className = 'question';
       } else {
-        a.forEach((a) => { a.className = 'answer close';})
+        a.forEach((a) => { a.className = 'answer close';
+        a.previousElementSibling.className = 'question';})
+        
         q.nextElementSibling.className = 'open';
-        q.forEach((q) => { q.className = 'question';})
         q.className = 'question active';
       };
 })); 
  
 
-
- 
