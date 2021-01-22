@@ -20,16 +20,16 @@ Background gradient:
 
 
  * {
+     box-sizing: border-box;
      margin: 0;
      padding: 0;
-     box-sizing: border-box;
  }
 
 html, body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
   height: 100%;
   margin: 0;
-  font-size: 12px;
-  font-family: 'Kumbh Sans', sans-serif;
 }
 
  body {
@@ -41,45 +41,45 @@ html, body {
   background-color: white;
   border-radius: 20px;
   display: flex;
-  width: 680px;
-  margin: 150px auto;
   height: 390px;
+  margin: 150px auto;
+  width: 680px;
  }
 
 
  .icon {
-  width: 40%;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  position: relative;
   background-image: url(/images/bg-pattern-desktop.svg);
-  background-repeat: no-repeat;
   background-position: 110% 70%;
+  background-repeat: no-repeat;
   background-size: 260%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  position: relative;
+  width: 40%;
  }
 
 #box-icon {
+ bottom: 31%;
+ left: -28%;
  position:absolute;
  width: 40%;
  z-index: 1;
- bottom: 31%;
- left: -28%;
 }
 
 #woman-icon {
   position:absolute;
-  width: 100%;
   right: 16%;
   top: 22%;
+  width: 100%;
 }
 
  .faq{
-   width: 60%;
+   background-color: white;
+   border-bottom-right-radius: 20px;
+   border-top-right-radius: 20px;
    height: 100%;
    padding: 50px;
-   background-color: white;
-   border-top-right-radius: 20px;
-   border-bottom-right-radius: 20px;
+   width: 60%;
  }
 
  .faq h1 {
@@ -87,12 +87,12 @@ html, body {
  }
 
 .question {
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
   border-bottom : solid 1px hsl(240, 5%, 91%);
   cursor: pointer;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
 }
 
 .question:hover {
@@ -100,14 +100,14 @@ html, body {
 }
 
 .question:after {
-  content: "";
-  position: absolute;
-  left: 290px;
-  width: 10px;
-  height: 7px;
   background-image: url(./../../images/icon-arrow-down.svg);
   background-repeat: no-repeat;
   background-size: 10px 7px;
+  content: "";
+  height: 7px;
+  left: 290px;
+  position: absolute;
+  width: 10px;
 }
 
 .close {
@@ -115,15 +115,15 @@ html, body {
 }
 
 .open  {
-  display: block;
   border-bottom : solid 1px hsl(240, 5%, 91%);
+  display: block;
   padding-bottom: 10px;
 }
 
 .active {
+  border: 0px;
   font-weight: 900;
   padding-bottom: 10px;
-  border: 0px;
 }
 
 .active::after{
@@ -136,47 +136,47 @@ html, body {
  .container {
    background-color: transparent;
    flex-direction: column;
+   height: 500px;
    justify-content: space-between;
    width: 320px;
-   height: 500px;
  }
 
  .icon {
-  height: 25%;
-  width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
- border-bottom-left-radius: 0px;
   background-color: white;
   background-image: url(/images/bg-pattern-mobile.svg);
-  background-repeat: no-repeat;
   background-position: 45% 20%; 
+  background-repeat: no-repeat;
   background-size: 70%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 25%;
+  width: 100%;
+ border-bottom-left-radius: 0px;
  }
 
  #box-icon {
+  left: 13%;
   position:absolute;
+  top: -21%;
   width: 25%;
   z-index: 1;
-  left: 13%;
-  top: -21%;
   }
   
   #woman-icon {
    position:absolute;
-   width: 70%;
    top: -77%;
+   width: 70%;
   }
 
  .faq {
-   width: 100%;
-   height: 75%;
-   justify-self: flex-end;
    border-bottom-left-radius: 20px;
    border-bottom-right-radius: 20px;
    border-top-right-radius: 0px;
-   padding:30px;
+   height: 75%;
+   justify-self: flex-end;
    padding-top: 30px;
+   padding:30px;
+   width: 100%;
  }
 
  .faq h1 {
@@ -184,16 +184,14 @@ html, body {
 }
 
  .question:after {
-  content: "";
-  position: absolute;
-  left: 97%;
-  width: 10px;
-  height: 7px;
   background-image: url(./../../images/icon-arrow-down.svg);
   background-repeat: no-repeat;
   background-size: 10px 7px;
+  content: "";
+  height: 7px;
+  left: 97%;
+  position: absolute;
+  width: 10px;
  }
-
-
 
 }
